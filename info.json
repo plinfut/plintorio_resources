@@ -1,0 +1,9 @@
+{
+    "name": "plintorio_resources",
+    "version": "0.1.0",
+    "title": "plintorio_resources",
+    "author": "Plinfut",
+    "homepage": "https://mods.factorio.com/mod/plintorio_resources",
+    "factorio_version": "2.0",
+    "dependencies": ["flib >= 0.16.5"]
+}
