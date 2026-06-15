@@ -29,7 +29,7 @@ local function onAreaSelected(event)
         }
         -- Dispatch the event to a handler
         if string.sub(toolName, 1, 31) == "plintorio_resources_tool_create" then
-            ch.processArea(event.surface, string.sub(toolName, 33), area)
+            ch.processArea(event.player_index, event.surface, string.sub(toolName, 33), area)
         end
         -- Disable the selection tool
         game.get_player(event.player_index).cursor_stack.clear()
