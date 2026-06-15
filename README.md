@@ -17,6 +17,7 @@ A mod for the game Factorio that allows players to quickly create rectangle reso
 - Only resources native to the current planet can be created by default. A map setting is available to allow the creation of all resources on all planets.
 
 Available resources:
+
 - Nauvis
     - Copper ore
     - Coal
