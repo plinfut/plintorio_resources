@@ -75,6 +75,10 @@ Available resources:
     - This also affects pumpjack resources as the mandatory spacing is considered part of the instance's size, despite the source itself only being 1x1 tile.
     - This is just how space works. I can't place half a resource or squeeze a full resource into a smaller area.
 
+## Credits
+
+- A big thank you to [fcalife](https://mods.factorio.com/user/fcalife) for providing the code to add Factorio+ resources!
+
 ## About Plintorio
 
 All my mods are primarily developed for my own specific use cases and I don't plan on making major additions I wouldn't use myself. But I'm open to small changes for others, and your suggestions may inspire me to use my own mods differently too, so bigger changes aren't out of the question. (And Factorio is pretty flexible, so some updates might be easier than you'd think.) All feedback is welcome and will be taken into consideration.
