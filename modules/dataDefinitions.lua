@@ -2,6 +2,10 @@
         PRIVATE CREATION TOOLS
 -------------------------------------------------------------------------------------------------]]
 
+-- OBS: mods table only exists during the data stage and script.active_mods only during the control
+-- stage, but this file is used in both.
+local activeMods = mods or script.active_mods
+
 local create = {}
 create["ashland-lichen-tree"] = {
     type = "entity",
@@ -252,6 +256,125 @@ create["wetland-yumako"] = {
     type = "tile", icon = "__space-age__/graphics/icons/wetland-yumako.png",
     planets = { gleba=true }
 }
+
+--[[-----------------------------------------------------------------------------------------------
+        COMPATIBILITY: FACTORIO+
+-------------------------------------------------------------------------------------------------]]
+if activeMods["factorioplus"] then
+    create["aquifer"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/resource-aquifer.png",
+        positioning = {
+            offset = { x=1, y=1 },
+            size = { x=1, y=1 },
+            spacing = { x=3, y=2 }
+        },
+        planets = { nauvis=true }
+    }
+    create["bauxite-ore"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/bauxite-ore.png",
+        positioning = {
+            offset = { x=0, y=0 },
+            size = { x=1, y=1 },
+            spacing = { x=0, y=0 }
+        },
+        planets = { nauvis=true }
+    }
+    create["forest"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/resource-forest.png",
+        positioning = {
+            offset = { x=2, y=2 },
+            size = { x=1, y=1 },
+            spacing = { x=5, y=4 }
+        },
+        planets = { nauvis=true }
+    }
+    create["geothermal-vent"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/resource-geothermal.png",
+        positioning = {
+            offset = { x=2, y=2 },
+            size = { x=1, y=1 },
+            spacing = { x=5, y=4 }
+        },
+        planets = { nauvis=true, vulcanus=true }
+    }
+    create["goblin-ore"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/goblin-ore.png",
+        positioning = {
+            offset = { x=0, y=0 },
+            size = { x=1, y=1 },
+            spacing = { x=0, y=0 }
+        },
+        planets = { nauvis=true }
+    }
+    create["goblin-ore-2"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/goblin-ore.png",
+        positioning = {
+            offset = { x=0, y=0 },
+            size = { x=1, y=1 },
+            spacing = { x=0, y=0 }
+        },
+        planets = { nauvis=true }
+    }
+    create["goblin-ore-3"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/goblin-ore.png",
+        positioning = {
+            offset = { x=0, y=0 },
+            size = { x=1, y=1 },
+            spacing = { x=0, y=0 }
+        },
+        planets = { nauvis=true }
+    }
+    create["iron-ore-pure"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/iron-ore-pure-1.png",
+        positioning = {
+            offset = { x=0, y=0 },
+            size = { x=1, y=1 },
+            spacing = { x=0, y=0 }
+        },
+        planets = { nauvis=true }
+    }
+    create["natural-gas"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/resource-natural-gas.png",
+        positioning = {
+            offset = { x=2, y=2 },
+            size = { x=1, y=1 },
+            spacing = { x=5, y=4 }
+        },
+        planets = { nauvis=true, gleba=true }
+    }
+    create["sand-ore"] = {
+        type = "entity",
+        icon = "__factorioplus__/graphics/icons/sand.png",
+        positioning = {
+            offset = { x=0, y=0 },
+            size = { x=1, y=1 },
+            spacing = { x=0, y=0 }
+        },
+        planets = { nauvis=true }
+    }
+    if activeMods["space-age"] then
+        create["bauxite-stromatolite"] = {
+            type = "entity",
+            icon = "__space-age__/graphics/icons/iron-stromatolite.png",
+            positioning = {
+                offset = { x=0, y=0 },
+                size = { x=1, y=1 },
+                spacing = { x=0, y=0 }
+            },
+            tile = "water-shallow",
+            planets = { gleba=true }
+        }
+    end
+end
 
 --[[-----------------------------------------------------------------------------------------------
         PUBLIC MODULE

@@ -56,6 +56,16 @@ Available resources:
         - Big formations yield more ice and lithium per tile
         - Huge formations yield more ice platforms per tile
     - Ammoniacal ocean
+- Factorio+ compatibility resources
+    - Aquifer
+    - Bauxite ore
+    - Deadwood fields
+    - Geothermal vent (Nauvis and Vulcanus)
+    - Goblin ore (three variants)
+    - Natural gas (Nauvis and Gleba)
+    - Pure iron
+    - Sand
+    - Bauxite stromatolite (in shallow water, on Gleba)
 
 ## Known issues
 
