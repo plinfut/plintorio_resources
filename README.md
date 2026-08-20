@@ -77,7 +77,7 @@ Available resources:
 
 ## Credits
 
-- A big thank you to [fcalife](https://mods.factorio.com/user/fcalife) for providing the code to add Factorio+ resources!
+- A big thank you to [fcalife](https://github.com/fcalife) for providing the code to add Factorio+ resources!
 
 ## About Plintorio
 
